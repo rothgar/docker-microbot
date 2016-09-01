@@ -1,5 +1,4 @@
-FROM gliderlabs/alpine
-MAINTAINER  Patrick O'Connor <patrick@dontreboot.me>
+FROM alpine:3.4
 
 # Install nginx, make it work well with docker, and get it ready to run
 RUN apk-install nginx && echo "daemon off;" >> /etc/nginx/nginx.conf \
